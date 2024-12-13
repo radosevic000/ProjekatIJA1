@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.pocetna {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: url('slike/restoran.jpg') center no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pocetna-tekst {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.pocetna-tekst h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pocetna-tekst p {
+    font-size: 1.2rem;
+}
+
+.pocetna-slika img {
+    display: none;
+}
+
+.rezervacija {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.rezervacija h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.rezervacija .dugme {
+    display: inline-block;
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.rezervacija .dugme:hover {
+    background: #ff6b6b;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.slideshow .slide {
+    flex: 1;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow .slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.slideshow .slide img:hover {
+    transform: scale(1.05);
+}
+
+.meni-tekst {
+    background: url('slike/restoran.jpg') center no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.meni-tekst h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.kategorije {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.kategorija {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kategorija h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.kategorija ul {
+    list-style: none;
+}
+
+.kategorija ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.kontakt {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.kontakt h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.forma-kontakt {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.forma-kontakt label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.forma-kontakt input,
+.forma-kontakt textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.forma-kontakt input:focus,
+.forma-kontakt textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.forma-kontakt button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forma-kontakt button:hover {
+    background-color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer .footer-info p {
+    margin: 0.5rem 0;
+}
+
+footer .mreze a {
+    color: #ff6b6b;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer .mreze a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+    .pocetna {
+        flex-direction: column;
+    }
+
+    .slideshow .slide {
+        max-width: 80%;
+    }
+
+    .kategorije {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kategorija {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .forma-kontakt {
+        padding: 20px;
+    }
+
+    .forma-kontakt input,
+    .forma-kontakt textarea {
+        padding: 10px;
+    }
+
+    .forma-kontakt button {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meni-tekst h2 {
+        font-size: 2rem;
+    }
+
+    .kategorija {
+        width: 90%;
+    }
+}
+
